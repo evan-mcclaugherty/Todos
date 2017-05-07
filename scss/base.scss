@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+}
+$primary-color-dark: #689F38;
+$primary-color: #8BC34A;
+$primary-color-light: #DCEDC8;
+$accent-color: #607D8B;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$divider-color: #BDBDBD;
+
+body,
+html {
+	height: 100%;
+	font-family: 'Comfortaa', cursive;
+	color: $primary-text-color;
+}
+
+input.new-todo {
+	font-size: 1.5rem;
+	color: $primary-text-color;
+}
+
+#nav-mobile {
+	display: flex;
+	justify-content: space-around;
+
+	li a {
+		transition: font-size 0.3s;
+
+		&:hover {
+			font-size: 1.25rem;
+		}
+	}
+}
+
+.card {
+	// background-color: $primary-color;
+	input {
+		border-bottom: 1px solid $primary-text-color;
+	}
+}
+
+nav {
+	background-color: $primary-color-light;
+
+	ul {
+		a {
+			color: $primary-text-color;
+		}
+	}
+}
+
+nav ul li {
+	width: 33%;
+	text-align: center;
+}
+
+#icons:hover {
+	cursor: pointer;
+}
+
+.collection-item {
+	min-height: 50px;
+	height: auto;
+}
+
+.collection input {
+	width: 90%;
+}
+
+.collection i.material-icons {
+	font-size: 2rem;
+	color: $divider-color;
+	transition: color 1s;
+}
+
+.collection i.material-icons:hover {
+	color: $accent-color;
+	cursor: pointer;
+}
+
+.collection p {
+	word-wrap: break-word;
+	width: 90%;
+	display: inline;
+	font-size: 1.25rem;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+.editing {
+	display: none !important;
+}
+
+.fixed-action-btn.toolbar ul li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fixed-action-btn.toolbar ul li p {
+	color: white;
+	font-size: 1.25rem;
+	margin: 0;
+	padding: 0.25 0;
+}
+
+.fixed-action-btn.toolbar ul li:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.btn-floating {
+	background-color: $accent-color;
+
+	&:hover {
+		background-color: $accent-color;
+	}
+}
+
+input:not([type]):focus:not([readonly]) {
+	font-size: 1.25rem;
+	border-bottom: 1px solid $accent-color;
+	box-shadow: 0 1px 0 0 $accent-color;
+}
+
+input[type=text]:focus:not([readonly]) {
+	font-size: 1.25rem;
+	border-bottom: 1px solid $accent-color;
+	box-shadow: 0 1px 0 0 $accent-color;
+}
+
+[type="checkbox"]:checked + label:before {
+	border-right: 2px solid $accent-color;
+	border-bottom: 2px solid $accent-color;
+}
+
+::-webkit-input-placeholder {
+	color: $accent-color;
+}
+
+::-moz-placeholder {
+	color: $accent-color;
+}
+
+:-ms-input-placeholder {
+	color: $accent-color;
+}
+
+:-moz-placeholder {
+	color: $accent-color;
+}
