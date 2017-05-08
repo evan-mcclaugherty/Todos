@@ -13,7 +13,7 @@
 	<title>Todos</title>
 </head>
 
-<body class="container">
+<body>
 	<section id="todo-app" class="container">
 		<header class="section">
 			<h1 class="center-align">Todos</h1>
@@ -28,6 +28,7 @@
 				autocomplete="off"
 				@keyup.enter="addTodo"
 				v-model="newTodo">
+				<button type="submit" class="btn btn-floating waves-effect waves-light"><i class="material-icons">send</i></button>
 			</form>
 		</div>
 
@@ -131,7 +132,7 @@
 				console.log('Service Worker registration failed: ', err);
 			});
 	} else {
-		alert('Your browser does not support service workers!');
+		console.log('Your browser does not support service workers!');
 	}
 	</script>
 	<script src="https://unpkg.com/vue@2.3.2"></script>

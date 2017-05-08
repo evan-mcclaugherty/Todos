@@ -1,152 +1,161 @@
 * {
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body, html {
-	height: 100%;
-	font-family: 'Comfortaa', cursive;
-	color: #212121;
+  height: 100%;
+  font-family: 'Comfortaa', cursive;
+  color: #212121;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 input.new-todo {
-	font-size: 1.5rem;
-	color: #212121;
+  font-size: 1.5rem;
+  color: #212121;
 }
 
 #nav-mobile {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 #nav-mobile li a {
-	-webkit-transition: font-size 0.3s;
-	transition: font-size 0.3s;
+  -webkit-transition: font-size 0.3s;
+  transition: font-size 0.3s;
 }
 
 #nav-mobile li a:hover {
-	font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 
 .card input {
-	border-bottom: 1px solid #212121;
+  border-bottom: 1px solid #212121;
 }
 
 nav {
-	background-color: #DCEDC8;
+  background-color: #DCEDC8;
 }
 
 nav ul a {
-	color: #212121;
+  color: #212121;
 }
 
 nav ul li {
-	width: 33%;
-	text-align: center;
+  width: 33%;
+  text-align: center;
 }
 
 #icons:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .collection-item {
-	min-height: 50px;
-	height: auto;
+  min-height: 50px;
+  height: auto;
 }
 
 .collection input {
-	width: 90%;
+  width: 90%;
 }
 
 .collection i.material-icons {
-	font-size: 2rem;
-	color: #BDBDBD;
-	-webkit-transition: color 1s;
-	transition: color 1s;
+  font-size: 2rem;
+  color: #BDBDBD;
+  -webkit-transition: color 1s;
+  transition: color 1s;
 }
 
 .collection i.material-icons:hover {
-	color: #607D8B;
-	cursor: pointer;
+  color: #607D8B;
+  cursor: pointer;
 }
 
 .collection p {
-	word-wrap: break-word;
-	width: 90%;
-	display: inline;
-	font-size: 1.25rem;
+  word-wrap: break-word;
+  width: 90%;
+  display: inline;
+  font-size: 1.25rem;
 }
 
 .completed {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .editing {
-	display: none !important;
+  display: none !important;
 }
 
 .fixed-action-btn.toolbar ul li {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .fixed-action-btn.toolbar ul li p {
-	color: white;
-	font-size: 1.25rem;
-	margin: 0;
-	padding: 0.25 0;
+  color: white;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0.25 0;
 }
 
 .fixed-action-btn.toolbar ul li:hover {
-	background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .btn-floating {
-	background-color: #607D8B;
+  background-color: #607D8B;
 }
 
 .btn-floating:hover {
-	background-color: #607D8B;
+  background-color: #607D8B;
 }
 
 input:not([type]):focus:not([readonly]) {
-	font-size: 1.25rem;
-	border-bottom: 1px solid #607D8B;
-	box-shadow: 0 1px 0 0 #607D8B;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #607D8B;
+  -webkit-box-shadow: 0 1px 0 0 #607D8B;
+  box-shadow: 0 1px 0 0 #607D8B;
 }
 
 input[type=text]:focus:not([readonly]) {
-	font-size: 1.25rem;
-	border-bottom: 1px solid #607D8B;
-	box-shadow: 0 1px 0 0 #607D8B;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #607D8B;
+  -webkit-box-shadow: 0 1px 0 0 #607D8B;
+  box-shadow: 0 1px 0 0 #607D8B;
 }
 
 [type="checkbox"]:checked+label:before {
-	border-right: 2px solid #607D8B;
-	border-bottom: 2px solid #607D8B;
+  border-right: 2px solid #607D8B;
+  border-bottom: 2px solid #607D8B;
 }
 
 ::-webkit-input-placeholder {
-	color: #607D8B;
+  color: #607D8B;
 }
 
 ::-moz-placeholder {
-	color: #607D8B;
+  color: #607D8B;
 }
 
 :-ms-input-placeholder {
-	color: #607D8B;
+  color: #607D8B;
 }
 
 :-moz-placeholder {
-	color: #607D8B;
+  color: #607D8B;
 }
